@@ -45,7 +45,7 @@ pipeline{
         sh 'docker logout'
     }
     success {
-        mail to: "kurbanaliev.mintemir@gmail.com",
+        emailext to: "kurbanaliev.mintemir@gmail.com",
         subject: "Success",
         body: "Good job!"
     }
