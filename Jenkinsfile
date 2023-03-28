@@ -44,5 +44,10 @@ pipeline{
     always {
         sh 'docker logout'
     }
+    success{
+        mail to: "kurbanaliev.mintemir@gmail.com",
+        subject: "Success",
+        body: "Good job!"
+    }
  } 
 }
