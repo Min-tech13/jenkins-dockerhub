@@ -15,7 +15,7 @@ pipeline{
     sh 'sudo docker build -t mintemir/awesome-cat-front awesome_cats_frontend'
    }
   }
-  stage('Build') {
+  stage('Build2') {
 
    steps {
     sh 'sudo docker build -t mintemir/awesome-cat-back awesome_cats_backend'
@@ -33,7 +33,7 @@ pipeline{
         sh 'sudo docker push mintemir/awesome-cat-front'
     }
   }
-  stage('Push') {
+  stage('Push2') {
 
     steps {
         sh 'sudo docker push mintemir/awesome-cat-back'
