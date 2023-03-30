@@ -5,7 +5,9 @@ pipeline{
  environment {
     DOCKERHUB_CREDENTIALS=credentials('dockerhub')
  }
-
+ triggers {
+  upstream 'day-2, '
+ }
 
  stages {
 
